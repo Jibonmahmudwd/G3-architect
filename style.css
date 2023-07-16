@@ -5,6 +5,8 @@
 /* shared style */
 *{
     font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+
 }
 
 .btn-primary{
@@ -22,6 +24,8 @@
 /* header style start here */
 header{
     background-color: rgba(255, 144, 14, 0.1);
+    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 nav{
     display: flex;
@@ -63,22 +67,87 @@ nav>ul a{
 }
 
 /* header style end here */
-
 /* main style start here */
+        /* features  */
+.feature{
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 40px;
+    
+}  
+/* .feature .img{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    row-gap: 15px;
+}     */
 
 /* main style end here */
 
 /* footer style start here */
+footer{
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+footer .text{
+    padding: 0px 300px;
+}
+footer .pic{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: space-evenly;
+    gap: 50px;
+    margin:10px 0 20px;
+}
+.pic img{
+    width: 100%;
+}
+footer .copyright{
+    border-radius:10px;
+    background: #FFF4E7;
+    height: 80px;
+    font-size: 1.2rem;
+    margin: 40px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* footer style end here */
 
 
 /* media query style for small device*/
 @media screen and (max-width: 576px) {
-    nav{
+    nav,
+    .feature{
         flex-direction: column;
     }
     .h-text{
         padding: 0px 10px;
+    }
+
+    .feature{
+        column-gap: 0px;
+        
+    }
+    .feature .text{
+        text-align: justify;
+        margin: 0 auto;
+    }
+    .feature .btn-primary{
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    footer .text{
+        padding: 0px 10px
+    }
+    footer .pic{
+        gap: 20px
     }
 }
 
@@ -93,4 +162,10 @@ nav>ul a{
     .h-text{
         padding: 10px 20px;
     }
+
+    
+    footer .text{
+        padding: 0px 20px
+    }
+    
 }
