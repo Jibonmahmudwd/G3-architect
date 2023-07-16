@@ -1,0 +1,96 @@
+/* font sans from google */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+/* font sans from google */
+
+/* shared style */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn-primary{
+    background: #FF900E;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 20px;
+
+}
+/* shared style */
+
+/* header style start here */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+nav{
+    display: flex;
+    padding: 10px 128px;
+    justify-content: space-between;
+    align-items: center;
+}
+nav div{
+    text-align: center;
+    font-size: 2rem ;
+    font-weight: 700;
+}
+nav>ul{
+    display: flex;
+}
+nav>ul li{
+    list-style: none;
+    margin-right: 20px;
+}
+nav>ul a{
+    text-decoration: none;
+    color: #424242;
+}
+
+.h-banner{
+    text-align: center;
+    padding: 0px 40px;
+}
+.h-text{
+    padding: 0px 200px;
+}
+.h-text>h1{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.h-banner img{
+    width: 100%;
+    padding-top: 40px; 
+}
+
+/* header style end here */
+
+/* main style start here */
+
+/* main style end here */
+
+/* footer style start here */
+/* footer style end here */
+
+
+/* media query style for small device*/
+@media screen and (max-width: 576px) {
+    nav{
+        flex-direction: column;
+    }
+    .h-text{
+        padding: 0px 10px;
+    }
+}
+
+
+
+
+/* media query style for medium device*/
+@media screen and (min-width: 576px) and (max-width: 992px){
+    nav{
+        flex-direction: column;
+    }
+    .h-text{
+        padding: 10px 20px;
+    }
+}
